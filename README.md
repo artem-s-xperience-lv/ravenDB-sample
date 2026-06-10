@@ -1,4 +1,4 @@
-# sqrib-ravenDB
+# RavenDB sample
 
 Root workspace for the sqrib RavenDB project.
 
