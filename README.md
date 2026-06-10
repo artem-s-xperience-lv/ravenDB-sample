@@ -1,6 +1,6 @@
 # RavenDB sample
 
-Root workspace for the sqrib RavenDB project.
+Root workspace for the RavenDB sample project.
 
 ## Structure
 
