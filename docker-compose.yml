@@ -1,0 +1,20 @@
+services:
+  ravendb:
+    image: ravendb/ravendb:latest
+    container_name: ravendb-dev
+    ports:
+      - "8080:8080"
+      - "38888:38888"
+    environment:
+      RAVEN_License_Eula_Accepted: "true"
+      RAVEN_Setup_Mode: "None"
+      RAVEN_Security_UnsecuredAccessAllowed: "PublicNetwork"
+      RAVEN_ARGS: "--log-to-console"
+    volumes:
+      - ravendb-data:/opt/RavenDB/Server/RavenData
+      - ravendb-config:/opt/RavenDB/config
+    restart: unless-stopped
+
+volumes:
+  ravendb-data:
+  ravendb-config:
